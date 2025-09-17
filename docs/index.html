@@ -9,7 +9,7 @@
 </head>
 <body data-bui-theme='traveller_ex-light' id="body">
     <!-- Header -->
-     <div class='header'>
+     <header class='header'>
         <img src="Images/logo.png" alt="KE6n Vanguard Logo" class="logo">
         <p id="para1">Vanguard</p>
         <div class="hamburger" id="hamburger">
@@ -17,11 +17,11 @@
             <span></span>
             <span></span>
         </div>
-    </div>
+    </header>
     <!-- Navigation -->
     <nav>
         <ul class="nav-links" id="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="#">Team</a></li>
             <li><a href="matches.html">Matches</a></li>
             <li><a href="#">Courses</a></li>
@@ -30,17 +30,16 @@
     </nav>
     </div>
 
-    <div class="descriptions">
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Welcome to KE6n Vanguard</h1>
-                <p>Championing the future of esports at KE6 College</p>
-                <a href="https://en.wikipedia.org/wiki/Esports" class="cta-button">View Match Highlights</a>
-            </div>
-            <iframe width="420" height="240" autoplay="1" src="https://www.youtube.com/embed/ZvhYlQsPqr8?si=SDs2lNf9BGDmCgYf"frameborder="0" allowfullscreen></iframe>
-        </section>
-    </div>
-
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to KE6n Vanguard</h1>
+            <p>Championing the future of esports at KE6 College</p>
+            <a href="https://en.wikipedia.org/wiki/Esports" class="cta-button">View Match Highlights</a>
+        </div>
+        <div class="hero-video">
+            <iframe width="420" height="240" src="https://www.youtube.com/embed/XEEasR7hVhA?si=Rn1u3FXwKQ3Z4IGL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
     <button class="thing">A thing</button>
 
     <footer class="footer">
@@ -48,13 +47,14 @@
     </footer>
 
     <script>
-      const hamburger = document.getElementById('hamburger');
-      const navLinks = document.getElementById('nav-links');
-      hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
-        hamburger.classList.toggle('active');
-      });
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
+        hamburger.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
     </script>
 </body>
 </html>
-
