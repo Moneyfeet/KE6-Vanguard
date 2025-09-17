@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" style="color-scheme: dark;" class="homepage">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KE6n Vanguard Esports</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body data-bui-theme='traveller_ex-light' id="body">
+     <div class='header'>
+        <img src="Images/logo.png" alt="KE6n Vanguard Logo" class="logo">
+        <p id="para1">Vanguard</p>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <nav>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="matches.html">Matches</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <div class="descriptions">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to KE6n Vanguard</h1>
+                <p>Championing the future of esports at KE6 College</p>
+                <a href="https://en.wikipedia.org/wiki/Esports" class="cta-button">View Match Highlights</a>
+            </div>
+            <video src="https://www.youtube.com/watch?v=jNQXAC9IVRw"></video>
+        </section>
+    </div>
+
+    <button class="thing">A thing</button>
+
+    <footer class="footer">
+        <p>&copy; 2025 KE6n Vanguard. All rights reserved.</p>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('nav-links');
+
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+        hamburger.classList.toggle('active');
+      });
+    </script>
+</body>
+</html>
