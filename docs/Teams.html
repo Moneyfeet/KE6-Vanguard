@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="sytlesheet> "href="main.css">
+    <title>KE6n Vanguard Esports</title>
+    <link rel="sytlesheet"> "href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
   </head>
   <body data-bui-theme="traveller_ex-light" id="body">
-    <!-- header -->
-    <div class="header">
+    <!-- Header -->
+    <header class="header">
       <img scr="Images/logo.png" alt="KE6n Vanguard Logo" class="logo">
       <p id="para1">Vanguard</p>
       <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
         <span></span>
-      </div>
+      </header>
     </div>
     <!-- Navigation -->
     <nav>
@@ -27,9 +28,21 @@
         <li><a href="#">Enquiry</a></li>
       </ul>
     </nav>
+
     <button class="Game">Test Your skill!</button>
     <footer class="footer">
       <p>&copy; 2025 KE6n Vanguard. All rights reserved.</p>
     </footer>
+
+      <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+            hamburger.classList.toggle('active');
+        });
+        hamburger.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+    </script>
   </body>
 </html>
