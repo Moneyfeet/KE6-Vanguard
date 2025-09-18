@@ -5,44 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-    <style>
-    table {
-      border-collapse: collapse;
-      width: 80%;
-      max-width: 800px;
-      background: #1a1a1a;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-    }
-    thead {
-      background: #222;
-    }
-    thead th {
-      padding: 14px;
-      text-align: left;
-      font-size: 1rem;
-      border-bottom: 2px solid #333;
-    }
-    tbody td {
-      padding: 12px;
-      border-bottom: 1px solid #333;
-    }
-    tbody tr:last-child td {
-      border-bottom: none;
-    }
-    .recent {
-      color: #4caf50;
-      font-weight: bold;
-    }
-    .upcoming {
-      color: #ff9800;
-      font-weight: bold;
-    }
-    .result {
-      font-style: italic;
-    }
-  </style>
 </head>
 <body data-bui-theme='traveller_ex-light' id="body">
      <div class='header'>
@@ -55,6 +17,7 @@
         </div>
     </div>
     <nav>
+        <!-- Navigation -->
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="Team.html">Team</a></li>
@@ -64,41 +27,49 @@
         </ul>
     </nav>
 <table>
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Opponent</th>
-        <th>Result</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Aug 20, 2025</td>
-        <td>Team Alpha</td>
-        <td class="result">Win 2–1</td>
-        <td class="recent">Recent</td>
-      </tr>
-      <tr>
-        <td>Aug 27, 2025</td>
-        <td>Team Bravo</td>
-        <td class="result">Loss 0–2</td>
-        <td class="recent">Recent</td>
-      </tr>
-      <tr>
-        <td>Sep 10, 2025</td>
-        <td>Team Sigma</td>
-        <td class="result">—</td>
-        <td class="upcoming">Upcoming</td>
-      </tr>
-      <tr>
-        <td>Sep 24, 2025</td>
-        <td>Team Delta</td>
-        <td class="result">—</td>
-        <td class="upcoming">Upcoming</td>
-      </tr>
-    </tbody>
-  </table>
+<!-- Matches -->
+  <section class="matches-section">
+    <h1>Match Schedule & Results</h1>
+    <table class="matches-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Opponent</th>
+          <th>Result</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aug 20, 2025</td>
+          <td>Team Alpha</td>
+          <td class="result win">Win 2–1</td>
+          <td class="recent">Recent</td>
+        </tr>
+        <tr>
+          <td>Aug 27, 2025</td>
+          <td>Team Bravo</td>
+          <td class="result loss">Loss 0–2</td>
+          <td class="recent">Recent</td>
+        </tr>
+        <tr>
+          <td>Sep 10, 2025</td>
+          <td>Team Sigma</td>
+          <td class="result">—</td>
+          <td class="upcoming">Upcoming</td>
+        </tr>
+        <tr>
+          <td>Sep 24, 2025</td>
+          <td>Team Delta</td>
+          <td class="result">—</td>
+          <td class="upcoming">Upcoming</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <footer class="footer">
+      <p>&copy; 2025 KE6n Vanguard. All rights reserved.</p>
+  </footer>
       <script>
       const hamburger = document.getElementById('hamburger');
       const navLinks = document.getElementById('nav-links');
