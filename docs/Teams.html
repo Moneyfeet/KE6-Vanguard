@@ -30,7 +30,24 @@
         
     </nav>
 
-    <button class="Game">Test your skills!</button>
+    <!-- Game Button -->
+    <div class="game-section">
+      <button class="Game" id="gameBtn">Test your skills!</button>
+    </div>
+    
+    <!-- Game Modal -->
+    <div class="game-modal" id="gameModal">
+      <div class="game-content">
+        <span class="close-btn" id="closeGame">&times;</span>
+        <h2>Fighter Duel</h2>
+        <div id="game">
+          <div id="p1" class="fighter"></div>
+          <div id="p2" class="fighter"></div>
+        </div>
+        <div id="status">Player 1: A/D to move, W to attack | Player 2: ←/→ to move, ↑ to attack</div>
+        <button id="startGame">Start/Reset</button>
+      </div>
+    </div>
 
     <section class="team-roster">
         <h2>Our Team</h2>
