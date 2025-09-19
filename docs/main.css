@@ -326,3 +326,57 @@ body {
   font-size: 20px;
   text-transform: uppercase;
 }
+/**Game section**/
+/* Modal Styling */
+.game-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.game-content {
+  background: #222;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  max-width: 900px;
+  width: 90%;
+}
+
+.close-btn {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+  color: #66fcf1;
+}
+
+/* Game Styles */
+#game {
+  width: 800px;
+  height: 400px;
+  background: linear-gradient(#444, #111);
+  margin: 20px auto;
+  position: relative;
+  border: 3px solid #fff;
+}
+
+.fighter {
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  transition: left 0.1s;
+}
+
+#p1 { left: 100px; background: red; }
+#p2 { left: 650px; background: blue; }
+
+.attack {
+  outline: 5px solid yellow;
+}
