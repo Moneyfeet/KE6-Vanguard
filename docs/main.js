@@ -5,8 +5,6 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
   hamburger.classList.toggle('active');
 });
-hamburger.addEventListener('click', toggleMenu);
-overlay.addEventListener('click', toggleMenu);
 
 // GAME
 const gameBtn = document.getElementById('gameBtn');
