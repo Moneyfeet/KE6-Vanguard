@@ -21,6 +21,7 @@ let p1CurrentHealth, p2CurrentHealth;
 
 // Open modal
 gameBtn.addEventListener('click', () => {
+   console.log("Game button clicked! Opening modal..."); // Debug message
   gameModal.style.display = 'flex';
   p1 = document.getElementById("p1");
   p2 = document.getElementById("p2");
