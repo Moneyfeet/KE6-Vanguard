@@ -7,22 +7,21 @@ hamburger.addEventListener('click', () => {
 });
 hamburger.addEventListener('click', toggleMenu);
 overlay.addEventListener('click', toggleMenu);
+
 // GAME
-// Elements
 const gameBtn = document.getElementById('gameBtn');
 const gameModal = document.getElementById('gameModal');
 const closeGame = document.getElementById('closeGame');
 const startGameBtn = document.getElementById('startGame');
 
-const p1 = document.getElementById("p1");
-const p2 = document.getElementById("p2");
-const status = document.getElementById("status");
-
-let p1Pos, p2Pos, gameActive;
+let p1, p2, p1Pos, p2Pos, gameActive;
 
 // Open modal
 gameBtn.addEventListener('click', () => {
   gameModal.style.display = 'flex';
+  // Initialize DOM references after modal is in DOM
+  p1 = document.getElementById("p1");
+  p2 = document.getElementById("p2");
   resetGame();
 });
 
@@ -36,13 +35,15 @@ closeGame.addEventListener('click', () => {
 startGameBtn.addEventListener('click', resetGame);
 
 function resetGame() {
+  if (!p1 || !p2) return; // avoid errors if modal not open
   p1Pos = 100;
   p2Pos = 650;
   p1.style.background = "red";
   p2.style.background = "blue";
   updatePositions();
   gameActive = true;
-  status.textContent = "Player 1: A/D to move, W to attack | Player 2: ←/→ to move, ↑ to attack";
+  document.getElementById("status").textContent = 
+      "Player 1: A/D to move, W to attack | Player 2: ←/→ to move, ↑ to attack";
 }
 
 // Movement & attack
@@ -77,6 +78,3 @@ function attack(attacker, defender, attPos, defPos) {
     setTimeout(() => defender.style.background = defender.id === "p1" ? "red" : "blue", 500);
   }
 }
-
-// Initialize game positions
-resetGame();
