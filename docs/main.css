@@ -77,7 +77,6 @@ body {
   z-index: 1000;
 }
 
-
 .nav-links li {
   opacity: 0;
   transform: translateY(-10px);
@@ -364,26 +363,34 @@ body {
   border:3px solid #fff;
 }
 
-.fighter-container {
-  position: absolute;
-  bottom:0;
-}
-
+/* Fighters */
 .fighter {
   width:50px;
   height:100px;
+  position:absolute;
+  bottom:0;
   transition:left 0.1s;
 }
-
-#p1 { left:100px; background:red; }
-#p2 { left:650px; background:blue; }
-
+#p1 { background:red; }
+#p2 { background:blue; }
 .attack { outline:5px solid yellow; }
 
-/* Health Bars */
-.health-bar {
-  width: 50px;
-  height: 8px;
-  background: green;
-  margin-bottom: 5px;
+/* Health bars */
+.health-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  box-sizing: border-box;
 }
+
+.health-bar {
+  width: 200px;
+  height: 15px;
+  background: green;
+  transition: width 0.2s, background 0.2s;
+}
+
+/* Positioning */
+#p1-health { left: 100px; }
+#p2-health { left: 650px; }
