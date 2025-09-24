@@ -5,7 +5,11 @@
   --bui-color_action_border: #0b0c10;
   --Text_color: #66fcf1;  
 }
-
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 body {
   font-family: 'Orbitron', sans-serif;
   margin: 0;
@@ -110,7 +114,11 @@ body {
   border-bottom: 2px solid #66fcf1;
 }
 
-
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 /* Footer */
 .footer {
   background-color: #1f2833;
