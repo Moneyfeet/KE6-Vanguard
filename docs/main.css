@@ -334,71 +334,37 @@ body {
   text-transform: uppercase;
 }
 /**Game section**/
-.game-modal {
-  display: none;
-  position: fixed;
-  top:0; left:0;
-  width:100%; height:100%;
-  background: rgba(0,0,0,0.85);
-  justify-content:center;
-  align-items:center;
-  z-index:2000;
-}
-
-.game-content {
-  background:#222;
-  padding:30px;
-  border-radius:12px;
-  text-align:center;
-  color:#fff;
-  max-width:900px;
-  width:90%;
-}
-
-.close-btn {
-  float:right;
-  font-size:22px;
-  cursor:pointer;
-  color:#66fcf1;
-}
-
-#game {
-  width: 800px;
-  height: 400px;
-  background: linear-gradient(#444, #111);
-  margin:20px auto;
-  position:relative;
-  border:3px solid #fff;
-}
-
-/* Fighters */
-.fighter {
-  width:50px;
-  height:100px;
-  position:absolute;
-  bottom:0;
-  transition:left 0.1s;
-}
-#p1 { background:red; }
-#p2 { background:blue; }
-.attack { outline:5px solid yellow; }
-
-/* Health bars */
-.health-container {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 50px;
-  box-sizing: border-box;
-}
-
-.health-bar {
-  width: 200px;
-  height: 15px;
-  background: green;
-  transition: width 0.2s, background 0.2s;
-}
-
-/* Positioning */
-#p1-health { left: 100px; }
-#p2-health { left: 650px; }
+.game-section {
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    .Game {
+        background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: 15px;
+    }
+    
+    .Game:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+    }
+    
+    #doom-container {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        margin-top: 15px;
+    }
+    
+    #doomFrame {
+        border: 3px solid #ff6b6b;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
