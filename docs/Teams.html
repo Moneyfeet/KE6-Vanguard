@@ -31,63 +31,64 @@ quiry<!DOCTYPE html>
     </nav>
 
     <!-- Game Button -->
-    <main>
-        <div class="game-section">
-            <button class="Game" id="gameBtn">Test your skills!</button>
-        </div>
-    
-        <div class="game-modal" id="gameModal">
-        <div class="game-content">
-            <span class="close-btn" id="closeGame">&times;</span>
-            <h2>Fighter Duel</h2>
-    
-            <!-- Health Bar Container -->
-            <div class="health-container">
-            <div id="p1-health" class="health-bar"></div>
-            <div id="p2-health" class="health-bar"></div>
+    <div class="wrapper">
+        <main class="content">
+            <div class="game-section">
+                <button class="Game" id="gameBtn">Test your skills!</button>
+            </div>
+        
+            <div class="game-modal" id="gameModal">
+                <div class="game-content">
+                    <span class="close-btn" id="closeGame">&times;</span>
+                    <h2>Fighter Duel</h2>
+            
+                    <!-- Health Bar Container -->
+                    <div class="health-container">
+                    <div id="p1-health" class="health-bar"></div>
+                    <div id="p2-health" class="health-bar"></div>
+                    </div>
+            
+                    <div id="game">
+                    <!-- Player Fighters -->
+                    <div id="p1" class="fighter"></div>
+                    <div id="p2" class="fighter"></div>
+                    </div>
+            
+                    <div id="status">A/D to move, W to attack, Space to jump</div>
+                </div>
             </div>
     
-            <div id="game">
-            <!-- Player Fighters -->
-            <div id="p1" class="fighter"></div>
-            <div id="p2" class="fighter"></div>
-            </div>
+            <section class="team-roster">
+                <h2>Our Team</h2>
+                <div class="roster-grid">
+                    <div class="player-card">
+                    <img src="Images/player1.jpg" alt="Player 1">
+                    <h3>PlayerOne</h3>
+                    <p>Role: Captain</p>
+                    </div>
+                    <div class="player-card">
+                    <img src="Images/player2.jpg" alt="Player 2">
+                    <h3>SharpShooter</h3>
+                    <p>Role: Sniper</p>
+                    </div>
+                    <div class="player-card">
+                    <img src="Images/player3.JPG" alt="Player 3">
+                    <h3>TankMaster</h3>
+                    <p>Role: Tank</p>
+                    </div>
+                    <div class="player-card">
+                    <img src="Images/player4.jpg" alt="Player 4">
+                    <h3>QuickFox</h3>
+                    <p>Role: Support</p>
+                    </div>
+                </div>
+            </section>
+        </main>
     
-            <div id="status">A/D to move, W to attack, Space to jump</div>
-        </div>
-        </div>
-
-
-        <section class="team-roster">
-            <h2>Our Team</h2>
-            <div class="roster-grid">
-                <div class="player-card">
-                <img src="Images/player1.jpg" alt="Player 1">
-                <h3>PlayerOne</h3>
-                <p>Role: Captain</p>
-                </div>
-                <div class="player-card">
-                <img src="Images/player2.jpg" alt="Player 2">
-                <h3>SharpShooter</h3>
-                <p>Role: Sniper</p>
-                </div>
-                <div class="player-card">
-                <img src="Images/player3.JPG" alt="Player 3">
-                <h3>TankMaster</h3>
-                <p>Role: Tank</p>
-                </div>
-                <div class="player-card">
-                <img src="Images/player4.jpg" alt="Player 4">
-                <h3>QuickFox</h3>
-                <p>Role: Support</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <p>&copy; 2025 KE6n Vanguard. All rights reserved.</p>
-    </footer>
+        <footer class="footer">
+            <p>&copy; 2025 KE6n Vanguard. All rights reserved.</p>
+        </footer>
+    </div>
 
     <script src="main.js"></script>
 </body>
