@@ -114,11 +114,19 @@ body {
   border-bottom: 2px solid #66fcf1;
 }
 
+/*Wrappers for the rest of of the page*/
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+
+/* Grow content to fill space */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
 /* Footer */
 .footer {
   background-color: #1f2833;
