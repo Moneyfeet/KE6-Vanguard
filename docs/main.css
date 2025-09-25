@@ -39,7 +39,7 @@ body {
 }
 
 #para1 {
-  font-size: 12rem;
+  font-size: 2rem;
   animation: wave 2s infinite alternate ease-in-out;
   text-shadow: 0 0 10px #0ff;
 }
