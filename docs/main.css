@@ -175,6 +175,10 @@ body {
   color: #fff;
 }
 
+.hero-text {
+  max-width: 100%;
+}
+
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 20px;
