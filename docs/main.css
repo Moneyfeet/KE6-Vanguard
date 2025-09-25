@@ -27,32 +27,11 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    padding: 40px 5%;
-  }
-  .hero-text {
-    max-width: 100%;
-  }
-  .matches-section, .matches-table {
-    padding: 20px 5%;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .matches-table {
-    overflow-x: auto; /* Allow table scroll on very small screens */
-  }
-  /* Adjust padding for nav-links on mobile */
-  .nav-links {
-    padding: 0;
-  }
-}
 
 /* Header */
 .header {
   background-color: var(--color-header);
-  padding: 0 20px;
+  padding: 0 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
