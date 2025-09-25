@@ -110,15 +110,15 @@ body {
   display: block;
   padding: 12px;
   text-decoration: none;
-  color: #66fcf1;
+  color: var(--color-accent);
   font-size: 18px;
   transition: 0.2s;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: #45a29e;
-  border-bottom: 2px solid #66fcf1;
+  color: var(--color-accent-hover);
+  border-bottom: 2px solid var(--color-accent);
 }
 
 /*Wrappers for the rest of of the page*/
