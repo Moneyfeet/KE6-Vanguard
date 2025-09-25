@@ -209,13 +209,15 @@ body {
 }
 
 .social-btn {
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  transition: 0.3s;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   color: white;
+  font-size: 22px;
+  transition: 0.3s;
 }
 
 .social-btn.twitter { background: #1DA1F2; }
@@ -224,8 +226,8 @@ body {
 .social-btn.youtube { background: #FF0000; }
 
 .social-btn:hover {
-  opacity: 0.8;
-  transform: scale(1.05);
+  transform: scale(1.15);
+  opacity: 0.9;
 }
 
 /***** Matches *****/
