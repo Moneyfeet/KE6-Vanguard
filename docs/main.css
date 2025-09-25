@@ -174,9 +174,7 @@ body {
               url("Images/logo.png") center/cover no-repeat;
   color: #fff;
 }
-.hero-text {
-  max-width: 50%;
-}
+
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 20px;
