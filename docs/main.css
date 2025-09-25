@@ -1,25 +1,28 @@
 /***** GLOBAL *****/
 :root
-[data-bui-theme='traveller_ex-light'] {  
-  --bui-color_border: #385355;  
+[data-bui-theme='traveller_ex-light'] { 
+  --bg-color: #0b0c10;
+  --color-header: #385355;  
   --bui-color_action_border: #0b0c10;
-  --Text_color: #66fcf1;  
+  --color-accent: #66fcf1; 
+  --color-accent-hover: #45a29e;
+
+  --header-height: 60px;
 }
-html {
+
+{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: 100%;
-
-  overflow-x: hidden;
-  width: 100%;
 }
+
 body {
   font-family: 'Orbitron', sans-serif;
   margin: 0;
   padding: 0;
   min-height: 100vh;
   min-width: 100vw;
-  background-color: #0b0c10;
+  background-color: var(--bg-color);
   color: #c5c6c7;
   overflow-x: hidden;
 }
@@ -48,16 +51,16 @@ body {
 
 /* Header */
 .header {
-  background-color: var(--bui-color_border);
-  padding: 15px 25px;
+  background-color: var(--color-header);
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
 }
 
-.header #para1 {
-  font-size: 2rem;
+#para1 {
+  font-size: 12rem;
   animation: wave 2s infinite alternate ease-in-out;
   text-shadow: 0 0 10px #0ff;
 }
