@@ -1,13 +1,11 @@
 /***** GLOBAL *****/
 :root
-[data-bui-theme='traveller_ex-light'] { 
-  --bg-color: #0b0c10;
-  --color-header: #385355;  
-  --bui-color_action_border: #0b0c10;
-  --color-accent: #66fcf1; 
-  --color-accent-hover: #45a29e;
-
-  --header-height: 60px;
+{ 
+  --bg-light: #385355; 
+  --bg-mid: #1f2833; 
+  --bg-dark: #0b0c10;
+  --Text-color: #66fcf1;
+  --accent: #45a29e;
 }
 
 * {
@@ -27,9 +25,24 @@ body {
   overflow-x: hidden;
 }
 
+section {
+  padding: 40px 10%;
+}
+
+/*Wrappers for the rest of of the page*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
 /* Header */
 .header {
-  background-color: var(--color-header);
+  background-color: var(--bg-light);
   padding: 0 15px;
   display: flex;
   align-items: center;
@@ -64,7 +77,7 @@ body {
 .hamburger span {
   display: block;
   height: 3px;
-  background: #66fcf1;
+  background: var(--Text-color);
   border-radius: 2px;
   transition: 0.3s;
 }
@@ -77,7 +90,7 @@ body {
   list-style: none;
   flex-direction: column;
   text-align: center;
-  background-color: #1f2833;
+  background-color: var(--bg-mid);
   margin: 0;
   padding: 0;
   max-height: 0;
@@ -110,37 +123,23 @@ body {
   display: block;
   padding: 12px;
   text-decoration: none;
-  color: var(--color-accent);
+  color: var(--Text-color);
   font-size: 18px;
   transition: 0.2s;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--color-accent-hover);
-  border-bottom: 2px solid var(--color-accent);
-}
-
-/*Wrappers for the rest of of the page*/
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Grow content to fill space */
-.content {
-  flex: 1;
-  padding: 20px;
+  color: var(--accent);
+  border-bottom: 2px solid var(--Text-color);
 }
 
 /* Footer */
 .footer {
-  background-color: #1f2833;
+  background-color: var(--bg-mid);
   text-align: center;
   padding: 20px;
   margin-top: 30px;
-  color: #c5c6c7;
   font-size: 0.9rem;
 }
 
@@ -156,10 +155,6 @@ body {
   color: #fff;
 }
 
-.hero-text {
-  max-width: 100%;
-}
-
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 20px;
@@ -171,14 +166,14 @@ body {
 .cta-button {
   display: inline-block;
   padding: 12px 24px;
-  background: #66fcf1;
+  background: var(--Text-color);
   color: #000;
   border-radius: 6px;
   text-decoration: none;
   transition: 0.3s;
 }
 .cta-button:hover {
-  background: #45a29e;
+  background: var(--accent);
 }
 
 /* social accounts */
@@ -190,15 +185,16 @@ body {
 }
 
 .social-btn {
-  width: 50px;
-  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  color: white;
   font-size: 22px;
   transition: 0.3s;
+  color: white;
+  text-decoration: none;
 }
 
 .social-btn.twitter { background: #1DA1F2; }
@@ -207,20 +203,19 @@ body {
 .social-btn.youtube { background: #FF0000; }
 
 .social-btn:hover {
-  transform: scale(1.15);
-  opacity: 0.9;
+  opacity: 0.8;
+  transform: scale(1.05);
 }
 
 /***** Matches *****/
 .matches-section {
-  padding: 60px 10%;
   text-align: center;
 }
 
 .matches-section h1 {
   font-size: 2.2rem;
   margin-bottom: 30px;
-  color: #66fcf1;
+  color: var(--Text-color);
 }
 /* table */
 .matches-table {
@@ -238,26 +233,19 @@ body {
   background: #222;
 }
 
-.matches-table thead th {
-  padding: 14px;
-  text-align: left;
-  font-size: 1rem;
-  border-bottom: 2px solid #333;
-  color: #66fcf1;
-}
-
-.matches-table tbody td {
-  padding: 12px;
+.matches-table th,
+.matches-table td {
+  padding: 12px 14px;
   border-bottom: 1px solid #333;
 }
 
-.matches-table tbody tr:last-child td {
-  border-bottom: none;
+.matches-table thead th {
+  font-size: 1rem;
+  color: var(--Text-color);
 }
 
-.matches-table tbody tr:hover {
-  background: #2a2a2a;
-}
+.matches-table tbody tr:last-child td {border-bottom: none;}
+.matches-table tbody tr:hover {background: #2a2a2a;}
 
 /* Results styling */
 .result.win {
@@ -278,15 +266,13 @@ body {
 }
 /***** Teams *****/
 .team-roster {
-  padding: 40px 20px;
   text-align: center;
 }
 
 .team-roster h2 {
-  font-family: 'Orbitron', sans-serif;
   font-size: 32px;
   margin-bottom: 30px;
-  color: #66fcf1;
+  color: var(--Text-color);
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -300,7 +286,7 @@ body {
 
 /* Player Card */
 .player-card {
-  background: #1f2833;
+  background: var(--bg-mid);
   border-radius: 12px;
   padding: 15px;
   box-shadow: 0 0 15px rgba(0,0,0,0.6);
@@ -318,8 +304,8 @@ body {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: #45a29e;
-  color: #0b0c10;
+  background: var(--accent);
+  color: var(--bg-dark);
   padding: 5px 10px;
   font-size: 13px;
   font-weight: bold;
@@ -328,7 +314,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* Player Image */
 .player-card img {
   width: 100%;
   height: 200px;
@@ -337,45 +322,44 @@ body {
   margin-bottom: 12px;
 }
 
-/* Name Styling */
 .player-name {
   margin: 5px 0;
-  color: #66fcf1;
+  color: var(--Text-color);
   font-size: 20px;
   text-transform: uppercase;
 }
 /**Game section**/
 .game-section {
-        text-align: center;
-        margin: 20px 0;
-    }
-    
-    .Game {
-        background: linear-gradient(45deg, #ff6b6b, #ee5a24);
-        color: white;
-        border: none;
-        padding: 12px 24px;
-        font-size: 16px;
-        border-radius: 25px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        margin-bottom: 15px;
-    }
-    
-    .Game:hover {
-        transform: scale(1.05);
-        box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
-    }
-    
-    #doom-container {
-        display: none;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        margin-top: 15px;
-    }
-    
-    #doomFrame {
-        border: 3px solid #ff6b6b;
-        border-radius: 10px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    }
+    text-align: center;
+    margin: 20px 0;
+}
+
+.Game {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.Game:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+#doom-container {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-top: 15px;
+}
+
+#doomFrame {
+    border: 3px solid #ff6b6b;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
