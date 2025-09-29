@@ -32,39 +32,7 @@
         </nav>
     
         <!-- Game Button -->
-        <main class="content">
-            <div class="game-section">
-                <h1>IGNORE THIS BUTTON ITS JUST HERE FOR FUN!!!</h1>
-                <p>enjoy!</p>
-                <button class="Game" id="gameBtn" onclick="toggleDoom()">Test your skills!</button>
-                <div id="doom-container">
-                    <iframe id="doomFrame" src="https://classicreload.com/doom.html" width="640" height="400"></iframe>
-                </div>    
-            </div>
-            <script>
-                let show = false;
-                
-                function toggleDoom() {
-                    const container = document.getElementById('doom-container');
-                    const button = document.getElementById('gameBtn');
-                    
-                    if (!show) {
-                        container.style.display = 'block';
-                        setTimeout(() => { container.style.opacity = '1'; }, 10);
-                        button.textContent = 'Hide Doom';
-                        show = true;
-                    } else {
-                        container.style.opacity = '0';
-                        setTimeout(() => { 
-                            container.style.display = 'none';
-                            button.textContent = 'Test your skills!';
-                        }, 300);
-                        show = false;
-                    }
-                }
-                        
-            </script>
-            
+        <main class="content">      
             <section class="team-roster">
                 <h2>Our Team</h2>
                 <div class="roster-grid">
