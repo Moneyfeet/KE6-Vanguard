@@ -1,11 +1,11 @@
-function buttonplay()
-{
-	let iwad = document.getElementById("iwad-file");
-	if(iwad.files.length == 0) return;
-	activategame("iwad=" + URL.createObjectURL(iwad.files[0]));
-}
+document.getElementById("gameBtn").addEventListener("click", () => {
+	const container = document.getElementById("doom-container");
+	container.style.display = "block"; // show canvas
 
-function activategame(args)
-{
-	document.getElementById("playarea").innerHTML = '<iframe id="jsdoom" width="320" height="200" src="jsdoom/jsdoom.html?' + args + '"></iframe>';
-}
+	// Initialize Doom engine
+	if (typeof Doom !== "undefined") {
+		Doom.init(container); // or Doom.start(container) depending on engine
+	} else {
+		console.error("Doom engine not loaded!");
+	}
+});
