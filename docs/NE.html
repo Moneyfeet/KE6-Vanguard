@@ -3,48 +3,53 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>KE6n Vanguard Esports</title>
-    <link rel="stylesheet" href="Style/main.css">
+    <link rel="stylesheet" href="Styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Doom/jsdoom/jsdoom.css">
+    <link rel="stylesheet" href="Doom/style.css">
 </head>
-<body data-bui-theme='traveller_ex-light' id="body">
-    <!-- Header -->
-     <header class='header'>
-        <img src="Images/logo.png" alt="KE6n Vanguard Logo" class="logo">
-        <p id="para1">Vanguard</p>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
-    <!-- Navigation -->
-    <nav>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Teams.html">Team</a></li>
-            <li><a href="matches.html">Matches</a></li>
-            <li><a href="NE.html" class="active">News & events</a></li>
-            <li><a href="enquiry.html">enquiry</a></li>
-        </ul>
-    </nav>
-    
+<body id="body">
     <div class="wrapper">
-        <main class="content">
-            <div class="game-section">
-                <h1>IGNORE THIS BUTTON ITS JUST HERE FOR FUN!!!</h1>
-                <p>enjoy!</p>
-                <button class="Game" id="gameBtn">Test your skills!</button>
-                <div id="doom-container" ></div>    
+        <!-- Header -->
+        <header class='header'>
+            <img src="Images/logo.png" alt="KE6n Vanguard Logo" class="logo">
+            <p id="para1">Vanguard</p>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </main>
-        <footer class="footer">
-            <p>&copy; 2025 KE6n Vanguard. All rights reserved.</p>
-        </footer>
+        </header>
+        <!-- Navigation -->
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Teams.html">Team</a></li>
+                <li><a href="matches.html">Matches</a></li>
+                <li><a href="NE.html" class="active">News & events</a></li>
+                <li><a href="enquiry.html" >enquiry</a></li>
+            </ul>
+        </nav>
+    
+    <div class="content">
+        <div id="dosbox"></div>
+        <button class="wrapper" onclick="dosbox.requestFullScreen();">
+            <a><span>FULLSCREEN</span></a>
+        </button>
     </div>
 
-    <script src="main.js"></script>
-    <script src="Doom/index.js" defer></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript">
+        var dosbox = new Dosbox({
+            id: "dosbox",
+            onload: function (dosbox) {
+                dosbox.run("/jsdoom/roms/ultimate-doom.zip", "./UltDoom/DOOM.EXE");
+            },
+            onrun: function (dosbox, app) {
+                console.log("App '" + app + "' is runned");
+            }
+        });
+    </script>
 </body>
 </html>
