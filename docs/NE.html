@@ -29,14 +29,14 @@
             <li><a href="enquiry.html">enquiry</a></li>
         </ul>
     </nav>
+    
     <div class="wrapper">
         <main class="content">
             <div class="game-section">
                 <h1>IGNORE THIS BUTTON ITS JUST HERE FOR FUN!!!</h1>
                 <p>enjoy!</p>
-                <input type="file" id="iwad-file" accept=".wad">
                 <button class="Game" id="gameBtn" onclick="buttonplay()">Test your skills!</button>
-                <div id="playarea"></div>    
+                <div id="doom-container" ></div>    
             </div>
         </main>
         <footer class="footer">
@@ -46,5 +46,18 @@
 
     <script src="main.js"></script>
     <script src="Doom/index.js" defer></script>
+    <script>
+        document.getElementById("gameBtn").addEventListener("click", () => {
+            const container = document.getElementById("doom-container");
+            container.style.display = "block"; // show canvas
+    
+            // Initialize Doom engine
+            if (typeof Doom !== "undefined") {
+                Doom.init(container); // or Doom.start(container) depending on engine
+            } else {
+                console.error("Doom engine not loaded!");
+            }
+        });
+    </script>
 </body>
 </html>
