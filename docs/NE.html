@@ -32,22 +32,38 @@
             </ul>
         </nav>
     
-    <div class="content">
-        <div id="dosbox"></div>
-        <button class="wrapper" onclick="dosbox.requestFullScreen();">
-            <a><span>FULLSCREEN</span></a>
-        </button>
+        <main class="content">
+             <div class="game-section">
+                <h1>IGNORE THIS BUTTON ITS JUST HERE FOR FUN!!!</h1>
+                <p>enjoy!</p>
+                <div id="dosbox"></div>
+                <button class="wrapper" onclick="dosbox.requestFullScreen();">
+                    <a><span>FULLSCREEN</span></a>
+                </button>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2025 KE6n Vanguard. All rights reserved.</p>
+        </footer>
     </div>
-
-    <script type="text/javascript" src="./script.js"></script>
+    
+    <script src="main.js"></script>
+    <script type="text/javascript" src="Doom/script.js" defer></script>
     <script type="text/javascript">
-        var dosbox = new Dosbox({
-            id: "dosbox",
-            onload: function (dosbox) {
-                dosbox.run("/jsdoom/roms/ultimate-doom.zip", "./UltDoom/DOOM.EXE");
-            },
-            onrun: function (dosbox, app) {
-                console.log("App '" + app + "' is runned");
+        document.getElementById('gameBtn').addEventListener('click', () => {
+            const container = document.getElementById('dosbox');
+
+            // Only add once
+            if (!container.innerHTML) {
+                var dosbox = new Dosbox({
+                    id: "dosbox",
+                    onload: function (dosbox) {
+                        dosbox.run("/jsdoom/roms/ultimate-doom.zip", "./UltDoom/DOOM.EXE");
+                    },
+                    onrun: function (dosbox, app) {
+                        console.log("App '" + app + "' is runned");
+                    }
+                });
             }
         });
     </script>
