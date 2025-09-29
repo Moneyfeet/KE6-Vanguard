@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Doom/jsdoom/jsdoom.css">
-    <script src="Doom/index.js" defer></script>
 </head>
 <body data-bui-theme='traveller_ex-light' id="body">
     <!-- Header -->
@@ -32,35 +31,13 @@
     </nav>
     <div class="wrapper">
         <main class="content">
-                        <div class="game-section">
+            <div class="game-section">
                 <h1>IGNORE THIS BUTTON ITS JUST HERE FOR FUN!!!</h1>
                 <p>enjoy!</p>
-                <button class="Game" id="gameBtn" onclick="toggleDoom()">Test your skills!</button>
-                <div id="doom-container"></div>    
+                <input type="file" id="iwad-file" accept=".wad">
+                <button class="Game" id="gameBtn" onclick="buttonplay()">Test your skills!</button>
+                <div id="playarea"></div>    
             </div>
-            <script>
-                let show = false;
-                
-                function toggleDoom() {
-                    const container = document.getElementById('doom-container');
-                    const button = document.getElementById('gameBtn');
-                    
-                    if (!show) {
-                        container.style.display = 'block';
-                        setTimeout(() => { container.style.opacity = '1'; }, 10);
-                        button.textContent = 'Hide Doom';
-                        show = true;
-                    } else {
-                        container.style.opacity = '0';
-                        setTimeout(() => { 
-                            container.style.display = 'none';
-                            button.textContent = 'Test your skills!';
-                        }, 300);
-                        show = false;
-                    }
-                }
-                        
-            </script>
         </main>
         <footer class="footer">
             <p>&copy; 2025 KE6n Vanguard. All rights reserved.</p>
@@ -68,5 +45,6 @@
     </div>
 
     <script src="main.js"></script>
+    <script src="Doom/index.js" defer></script>
 </body>
 </html>
