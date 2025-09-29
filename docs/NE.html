@@ -3,11 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>KE6n Vanguard Esports</title>
     <link rel="stylesheet" href="Styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Doom/style.css">
 </head>
 <body id="body">
     <div class="wrapper">
@@ -36,36 +34,15 @@
              <div class="game-section">
                 <h1>IGNORE THIS BUTTON ITS JUST HERE FOR FUN!!!</h1>
                 <p>enjoy!</p>
-                <div id="dosbox"></div>
-                <button class="wrapper" onclick="dosbox.requestFullScreen();">
-                    <a><span>FULLSCREEN</span></a>
-                </button>
+                <button class="Game" id="gameBtn">Test your skills!</button>
+                <div id="doom-container" ></div>    
             </div>
         </main>
         <footer class="footer">
             <p>&copy; 2025 KE6n Vanguard. All rights reserved.</p>
         </footer>
     </div>
-    
-    <script src="main.js"></script>
-    <script type="text/javascript" src="Doom/script.js" defer></script>
-    <script type="text/javascript">
-        document.getElementById('gameBtn').addEventListener('click', () => {
-            const container = document.getElementById('dosbox');
 
-            // Only add once
-            if (!container.innerHTML) {
-                var dosbox = new Dosbox({
-                    id: "dosbox",
-                    onload: function (dosbox) {
-                        dosbox.run("/jsdoom/roms/ultimate-doom.zip", "./UltDoom/DOOM.EXE");
-                    },
-                    onrun: function (dosbox, app) {
-                        console.log("App '" + app + "' is runned");
-                    }
-                });
-            }
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
