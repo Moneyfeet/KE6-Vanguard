@@ -151,7 +151,7 @@ section {
   align-items: center;
   padding: 60px 10%;
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-              url("Images/logo.png") center/cover no-repeat;
+              url("../Images/logo.png") center/cover no-repeat;
   color: #fff;
 }
 
