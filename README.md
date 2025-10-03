@@ -1,7 +1,10 @@
 # KE6-Vanguard
 
-This is just a college project
-Vanguard is the college esports
 <html>
-  <img src='docs/Images/logo.png'>
+  <div style='padding:15px 25px; display: flex; align-items:center;'>
+    <h1> Vanguard </h1>
+    <img src='docs/Images/logo.png'>
+  </div>
+    This is just a college project
+    Vanguard is the college esports
 </html>
