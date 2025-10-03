@@ -1,12 +1,3 @@
-html,
-body {
-  min-height: 100%;
-}
-body {
-  text-align: center;
-  background: #111 url(https://goo.gl/D1AeUS) center no-repeat;
-}
-
 .content {
   display: flex;
   flex-direction: column;
