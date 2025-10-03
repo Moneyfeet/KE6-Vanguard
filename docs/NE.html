@@ -36,8 +36,10 @@
                 <h1>There seems to be no new news or events</h1>
                 <p>In the mean time...</p>
                 <button class="Game" id="gameBtn">Test your skills!</button>
-                <div id="dosbox"></div>
-                 <a id='fullscreen'><span>FULLSCREEN</span></a>
+                <div id="game" style='display:none;'>
+                    <div id="dosbox"></div>
+                    <a><span>FULLSCREEN</span></a>
+                </div>
             </div>
         </main>
         <footer class="footer">
@@ -62,11 +64,11 @@
         let show = false
         document.getElementById('gameBtn').addEventListener('click', function() {
             if (!show) {
-                document.getElementById("dosbox").style.display = 'block';
-                document.getElementById("fullscreen").style.display = 'block';
+                document.getElementById("game").style.display = 'block';
+                show = true
             } else {
-                document.getElementById("dosbox").style.display = 'none';
-                document.getElementById("fullscreen").style.display = 'None';
+                document.getElementById("game").style.display = 'none';
+                show = false
             };
         })
     </script>
