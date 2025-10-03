@@ -7,4 +7,5 @@
   </div>
     <p>This is just a college project</p>
     <p>Vanguard is the college esports</p>
+    <a href='moneyfeet.github.io/ke6-vangard'>Live website</a>
 </html>
