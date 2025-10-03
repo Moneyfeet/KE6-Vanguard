@@ -3,14 +3,11 @@ body {
   min-height: 100%;
 }
 body {
-  font-family: sans-serif;
   text-align: center;
   background: #111 url(https://goo.gl/D1AeUS) center no-repeat;
-  background-size: cover;
-  color: #aaa;
 }
 
-.container {
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
