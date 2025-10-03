@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KE6n Vanguard Esports</title>
     <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" type="text/css" href="Doom/style.css">
+    <link rel="stylesheet" href="Doom/styles/button.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
 <body id="body">
@@ -35,10 +37,12 @@
              <div class="game-section">
                 <h1>There seems to be no new news or events</h1>
                 <p>In the mean time...</p>
-                <button class="Game" id="gameBtn">Test your skills!</button>
-                <div id="game" style='display:none;'>
+                <button id="gameBtn">Test your skills!</button>
+                <div id="gameframe" style='display:none;'>
                     <div id="dosbox"></div>
-                    <a><span>FULLSCREEN</span></a>
+                    <button id="fullscreen" onclick="dosbox.requestFullScreen();">
+                        <a><span>FULLSCREEN</span></a>
+                    </button>
                 </div>
             </div>
         </main>
@@ -64,10 +68,10 @@
         let show = false
         document.getElementById('gameBtn').addEventListener('click', function() {
             if (!show) {
-                document.getElementById("game").style.display = 'block';
+                document.getElementById("gameframe").style.display = 'block';
                 show = true
             } else {
-                document.getElementById("game").style.display = 'none';
+                document.getElementById("gameframe").style.display = 'none';
                 show = false
             };
         })
