@@ -11,7 +11,7 @@
     </style>
   </head>
   <body>
-    <header class='header>
+    <header class='header'>
       <h1> Vanguard </h1>
       <img style='width:80px;height:80px;' src='docs/Images/logo.png'>
     </header>
