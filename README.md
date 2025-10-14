@@ -1,7 +1,7 @@
 # KE6-Vanguard
 <html>
   <head>
-    <style>
+    <style type='css'>
       body {
         margin: 0;
         padding: 0;
