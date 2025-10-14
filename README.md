@@ -1,16 +1,9 @@
-# KE6-Vanguard
 <html>
   <head>
-    <style type='css'>
-      .header {
-        padding:15px 25px; 
-        display: flex;
-        align-items:center; 
-        justify-content:space-between;
-      }
-    </style>
+    <meta charset="utf-8">
   </head>
   <body>
+    # KE6-Vanguard
     <header class='header'>
       <h1> Vanguard </h1>
       <img style='width:80px;height:80px;' src='docs/Images/logo.png'>
