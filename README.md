@@ -2,19 +2,12 @@
 <html>
   <head>
     <style type='css'>
-      body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-      }
-      
       .header {
         padding:15px 25px; 
         display: flex;
         align-items:center; 
         justify-content:space-between;
       }
-      
     </style>
   </head>
   <body>
