@@ -1,0 +1,53 @@
+{
+    "totalArticles": 4480,
+    "articles": [
+        {
+            "id": "f7f38e9f65e564e45181bece20ba1355",
+            "title": "Christianity Is Coming Back to Life in the UK",
+            "description": "For as long as I can remember, the Christian religion has only moved in one direction in British life — toward the periphery. The Church of England’s pews have emptied and aged. The religious establishment has preached the most anodyne form of faith possible (try listening to the BBC Radio 4’s “God slot”, “thought for the day”, at 7:47 every morning). Though the King Charles III is formally head of the Church of England, and bishops sit in the House of Lords, this has had the paradoxical effect",
+            "content": "For as long as I can remember, the Christian religion has only moved in one direction in British life — toward the periphery. The Church of England’s pews have emptied and aged. The religious establishment has preached the most anodyne form of faith ... [1262 chars]",
+            "url": "https://www.bloomberg.com/opinion/articles/2025-10-07/a-popular-revival-of-christianity-in-the-uk-stirs-excitement-and-alarm",
+            "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iqaSDpW6JrsU/v1/1200x1044.jpg",
+            "publishedAt": "2025-10-07T04:00:10Z",
+            "lang": "en",
+            "source": {
+                "id": "7006f2c40c7cc01195608dbfd60259b3",
+                "name": "Bloomberg",
+                "url": "https://www.bloomberg.com",
+                "country": "us"
+            }
+        },
+        {
+            "id": "b70effb5960afaa2965c8eab217c0566",
+            "title": "Taylor Swift Has No Interest in a Trip to 'Cold, Scary' Space",
+            "description": "Taylor Swift appeared on BBC Radio 2’s Scott Mills' Monday, Oct. 6 show, and confessed that she's \"never\" considered going to space like fellow popstar Katy Perry.",
+            "content": "Taylor Swift is going to pass on the possibility of space exploration.\nThe Life of a Showgirl singer confessed during a conversation with BBC Radio 2's Scott Mills that she’s never considered going to space like fellow pop star Katy Perry.\nDuring Swi... [2178 chars]",
+            "url": "https://people.com/taylor-swift-has-no-interest-in-trip-to-cold-scary-space-11825356",
+            "image": "https://people.com/thmb/tTvWUZisd1AzC5JhhxDlmIk7PTM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(781x284:783x286)/taylor-swift-1-100625-1502111e587142e79cd80d78140ce049.jpg",
+            "publishedAt": "2025-10-07T01:20:38Z",
+            "lang": "en",
+            "source": {
+                "id": "c837db3560dbe304554f10dddd97c3c8",
+                "name": "People.com",
+                "url": "https://people.com",
+                "country": "us"
+            }
+        },
+        {
+            "id": "a5e590c8b175f6f37e51c36163f2397e",
+            "title": "Fixing The Show's Biggest Mistake",
+            "description": "The BBC's Sherlock had a strong start and a painfully bad ending, but if a fifth season were to happen, it could solve the show's biggest problem.",
+            "content": "The BBC’s Sherlock had a strong start but a weak ending, but if a fifth season were to happen, it could solve the show’s biggest problem. As one of the most popular characters in literature, Sherlock Holmes has been adapted to all types of media for ... [5114 chars]",
+            "url": "https://screenrant.com/sherlock-season-5-fix-problem-holmes-watson/",
+            "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/10/benedict-cumberbatch-as-sherlock-holmes-under-red-light-in-sherlock.jpg?w=1600&h=900&fit=crop",
+            "publishedAt": "2025-10-06T23:30:17Z",
+            "lang": "en",
+            "source": {
+                "id": "6b8b6fae575a37200ef9ef50109518f5",
+                "name": "Screen Rant",
+                "url": "https://screenrant.com",
+                "country": "us"
+            }
+        }
+    ]
+}
