@@ -1,9 +1,9 @@
+# KE6-Vanguard
 <html>
   <head>
     <meta charset="utf-8">
   </head>
   <body>
-    # KE6-Vanguard
     <header class='header'>
       <h1> Vanguard </h1>
       <img style='width:80px;height:80px;' src='docs/Images/logo.png'>
