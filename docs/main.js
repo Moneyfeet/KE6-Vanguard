@@ -9,7 +9,7 @@ hamburger.addEventListener('click', () => {
 async function sendMessage() {
   const userInput = document.getElementById("user-input").value;
 
-  const response = await fetch("https://chatbot-api-a65d.onrender.com/chat", {
+  const response = await fetch("https://chatbot-api-a65d.onrender.com", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message: userInput })
