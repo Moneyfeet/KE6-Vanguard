@@ -1,8 +1,8 @@
-.wrapper{
+.fullscreen{
   padding: 0;
 }
 
-a{
+.fullscreen{
   display: block;
   width: 200px;
   height: 40px;
@@ -18,12 +18,12 @@ a{
   transition: all .35s;
 }
 
-a span{
+.fullscreen span{
   position: relative;
   z-index: 2;
 }
 
-a:after{
+.fullscreen:after{
   position: absolute;
   content: "";
   top: 0;
@@ -34,10 +34,10 @@ a:after{
   transition: all .35s;
 }
 
-a:hover{
+.fullscreen:hover{
   color: rgb(255, 255, 255);
 }
 
-a:hover:after{
+.fullscreen:hover:after{
   width: 100%;
 }
