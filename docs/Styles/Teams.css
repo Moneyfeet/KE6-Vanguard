@@ -59,6 +59,9 @@
   margin-bottom: 12px;
 }
 
+.leader {
+  display: block;
+}
 /* Name Styling */
 .player-name {
   margin: 5px 0;
