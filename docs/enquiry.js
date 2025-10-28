@@ -3,7 +3,6 @@ function submit() {
     const name = document.getElementById("Name").value.trim(); 
     const email = document.getElementById("Email").value.trim();
     const contact = document.getElementById("Contact").value.trim();
-    console.log(name, email, contact);
     if (name === "" || email === "" || contact.value === "") {
         alert("Please fill in all fields.");
         return;
@@ -19,7 +18,6 @@ function submit() {
     }
 
     const phonePattern = /^\d{5,15}$/;
-    console.log(phonePattern.test(contact));
     if (!phonePattern.test(contact)) {
         alert("Please enter a valid 5-15 digit contact number.");
         return;
