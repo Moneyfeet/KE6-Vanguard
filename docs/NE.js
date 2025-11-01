@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Loading state
   container.innerHTML = `<p style="text-align:center; color:#66fcf1;">Loading news...</p>`;
 
-  fetch('news-data.json')
+  fetch('news-dat.json')
     .then(response => {
       if (!response.ok) throw new Error('Network response was not ok');
       return response.json();
@@ -70,4 +70,5 @@ btn.addEventListener('click', function() {
         document.getElementById('fullscreen').style.display = 'none';
         show = false
     }
+
 });
