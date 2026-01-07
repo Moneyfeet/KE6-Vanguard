@@ -11,7 +11,7 @@
 }
 
 .dosbox-container > .dosbox-overlay {
-  background: url(./assets/img/overlay.png) center no-repeat;
+  background: url(.lib/Doom/assets/img/overlay.png) center no-repeat;
   background-size: 100%;
 }
 
