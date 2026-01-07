@@ -16,7 +16,7 @@ body {
 }
 
 .dosbox-container > .dosbox-overlay {
-  background: url(../Doom/assets/img/overlay.png) center no-repeat;
+  background: url(../lib/Doom/assets/img/overlay.png) center no-repeat;
   background-size: 100%;
 }
 
@@ -150,4 +150,5 @@ button {
   background: #66fcf1;
   color: #1f2833;
 }
+
 
