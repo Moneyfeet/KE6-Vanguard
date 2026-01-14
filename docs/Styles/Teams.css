@@ -14,12 +14,16 @@
 }
 
 /* Grid Layout */
-.roster-grid {
+.leader-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;
+}
+.captain-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
 }
-
 /* Player Card */
 .player-card {
   background: #1f2833;
@@ -53,15 +57,13 @@
 /* Player Image */
 .player-card img {
   width: 100%;
-  height: 200px;
+  height: auto;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 12px;
 }
 
-.leader {
-  display: block;
-}
 /* Name Styling */
 .player-name {
   margin: 5px 0;
