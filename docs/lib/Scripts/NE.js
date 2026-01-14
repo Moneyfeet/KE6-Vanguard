@@ -1,7 +1,7 @@
 var dosbox = new Dosbox({
     id: 'dosbox',
     onload: function (dosbox) {
-        dosbox.run('Doom/jsdoom/roms/ultimate-doom.zip',"./UltDoom/DOOM.EXE");
+        dosbox.run('lib/Doom/jsdoom/roms/ultimate-doom.zip',"./UltDoom/DOOM.EXE");
     },
     onrun: function (dosbox, app) {
         console.log("App '" + app + " is running");
@@ -72,3 +72,4 @@ btn.addEventListener('click', function() {
     }
 
 });
+
