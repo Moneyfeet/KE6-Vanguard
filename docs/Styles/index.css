@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   padding: 60px 10%;
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/logo.png") center/cover no-repeat;
   color: #fff;
@@ -31,30 +32,44 @@
 .cta-button:hover {
   background: #45a29e;
 }
-/* social accounts */
-.social-buttons {
+.about h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-content {
   display: flex;
-  gap: 15px;
-  justify-content: center;
-  margin: 20px 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  }
+  .about-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
 }
-
-.social-btn {
-  padding: 12px 20px;
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about-content img {
+  width: 400px;
+  height: auto;
   border-radius: 8px;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  transition: 0.3s;
-  color: white;
 }
 
-.social-btn.twitter { background: #1DA1F2; }
-.social-btn.instagram { background: #E4405F; }
-.social-btn.twitch { background: #6441A5; }
-.social-btn.youtube { background: #FF0000; }
 
-.social-btn:hover {
-  opacity: 0.8;
-  transform: scale(1.05);
-}
