@@ -38,6 +38,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
   z-index: 1000;
 }
 
@@ -137,7 +139,6 @@ body {
   padding: 20px;
 }
 
-
 /* Footer */
 .footer {
   background-color: #1f2833;
@@ -147,3 +148,33 @@ body {
   color: var(--Text_color);
   font-size: 0.9rem;
 }
+
+/* social accounts */
+.social-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.social-btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+  color: white;
+}
+
+.social-btn.twitter { background: #1DA1F2; }
+.social-btn.instagram { background: #E4405F; }
+.social-btn.twitch { background: #6441A5; }
+.social-btn.youtube { background: #FF0000; }
+
+.social-btn:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* css for mobile */
