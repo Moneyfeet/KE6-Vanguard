@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  flex-direction: column;
   padding: 60px 10%;
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../Images/logo.png") center/cover no-repeat;
   color: #fff;
@@ -12,64 +13,87 @@
 .hero-text {
   max-width: 50%;
 }
+
 .hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: var(--font-size-xxl);
+  margin-bottom: var(--spacing-lg);
 }
 .hero-text p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: var(--font-size-large);
+  margin-bottom: var(--spacing-lg);
 }
 .cta-button {
   display: inline-block;
-  padding: 12px 24px;
+  padding: var(--spacing-md) var(--spacing-xl);
   background: var(--color-accent);
   color: #000;
-  border-radius: 6px;
+  border-radius: var(--border-radius-sm);
   text-decoration: none;
-  transition: 0.3s;
+  transition: var(--transition-normal);
 }
 .cta-button:hover {
   background: #45a29e;
 }
-.about h1 {
-  text-align: center;
-  margin-bottom: 20px;
+/***** About Section *****/
+.about {
+  background: radial-gradient(circle at top left, var(--color-darker), var(--bg-color));
+  padding: var(--spacing-xxl) var(--spacing-lg);
 }
-@media screen and (max-width: 768px) {
+
+#about-Title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.about-t {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-xxl);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  line-height: var(--line-height);
+  margin-bottom: var(--spacing-lg);
+  color: #bfc4c9;
+}
+
+#team-img {
+  flex: 1;
+  max-width: 500px;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-lg), var(--shadow-accent);
+}
+/***** Responsive Design *****/
+/***** If screen is small, div formation will change to compensate *****/
+@media screen and (max-width: 850px) {
   .hero {
-    flex-direction: column;
     padding: 40px 5%;
   }
   .hero-text {
     max-width: 100%;
     margin-bottom: 20px;
   }
-  .about-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
+  .about-t {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
   }
-  .about-content img {
+
+  .about-text {
+    text-align: center;
+  }
+
+  #team-img {
     width: 100%;
     height: auto;
     border-radius: 8px;
   }
 }
-.about-content {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-.about-content img {
-  width: 400px;
-  height: auto;
-  border-radius: 8px;
-}
-
-
