@@ -1,0 +1,275 @@
+{
+    "1": {
+        "id": "13396",
+        "datetime": "16:0011 Oct 23 ",
+        "score1": "13",
+        "opponent": "RT Rhinos VaL 2 (X)",
+        "score2": "2"
+    },
+    "2": {
+        "id": "13397",
+        "datetime": "16:0011 Oct 23 ",
+        "score1": "3",
+        "opponent": "KC Vengeances",
+        "score2": "13"
+    },
+    "3": {
+        "id": "13398",
+        "datetime": "16:0011 Oct 23 ",
+        "score1": "3",
+        "opponent": "Midas",
+        "score2": "13"
+    },
+    "4": {
+        "id": "13399",
+        "datetime": "16:0011 Oct 23 ",
+        "score1": "13",
+        "opponent": "East Norfolk Knights",
+        "score2": "0"
+    },
+    "5": {
+        "id": "13400",
+        "datetime": "16:0011 Oct 23 ",
+        "score1": "5",
+        "opponent": "KC Vex",
+        "score2": "13"
+    },
+    "6": {
+        "id": "13405",
+        "datetime": "16:0011 Oct 23",
+        "score1": "7",
+        "opponent": "SDC Seagull",
+        "score2": "5"
+    },
+    "7": {
+        "id": "13406",
+        "datetime": "16:0011 Oct 23",
+        "team1": "13",
+        "opponent": "ACE Saints Valorant",
+        "score1": "2"
+    },
+    "8": {
+        "id": "13407",
+        "datetime": "16:0011 Oct 23",
+        "score1": "6",
+        "opponent": "Felsted Flare",
+        "score2": "7"
+    },
+    "9": {
+        "id": "13408",
+        "datetime": "16:0011 Oct 23",
+        "score1": "2",
+        "opponent": "LSEC Storm",
+        "score2": "13"
+    },
+    "10": {
+        "id": "13409",
+        "datetime": "16:0011 Oct 23",
+        "score1": "2",
+        "opponent": "AC Esports",
+        "score2": "13"
+    },
+    "11": {
+        "id": "13410",
+        "datetime": "16:0011 Oct 23",
+        "score1": "11",
+        "opponent": "ACE Misfits",
+        "score2": "13"
+    },
+    "12": {
+        "id": "13411",
+        "datetime": "16:0011 Oct 23",
+        "score1": "0",
+        "opponent": "Wilmington Wolves ",
+        "score2": "0"
+    },
+    "13": {
+        "id": "13412",
+        "datetime": "16:0011 Oct 23",
+        "score1": "1",
+        "opponent": "BPCBuccaneersVAL-2",
+        "score2": "12"
+    },
+    "14": {
+        "id": "13413",
+        "datetime": "16:0011 Oct 23",
+        "score1": "13",
+        "opponent": "V Cobalt Krakens",
+        "score2": "6"
+    },
+    "15": {
+        "id": "13414",
+        "datetime": "16:0011 Oct 23",
+        "score1": "13",
+        "opponent": "BPCBuccaneersVAL-1",
+        "score2": "1"
+    },
+    "16": {
+        "id": "13415",
+        "datetime": "16:0011 Oct 23",
+        "score1": "13",
+        "opponent": "SNC Rams",
+        "score2": "0"
+    },
+    "17": {
+        "id": "13416",
+        "datetime": "16:0011 Oct 23",
+        "score1": "9",
+        "opponent": "SNC Rams",
+        "score2": "13"
+    },
+    "18": {
+        "id": "13417",
+        "datetime": "16:0011 Oct 23",
+        "score1": "4",
+        "opponent": "Robins Esports B (X)",
+        "score2": "13"
+    },
+    "19": {
+        "id": "13419",
+        "datetime": "16:0011 Oct 23",
+        "score1": "13",
+        "opponent": "MidKent Mariners",
+        "score2": "0"
+    },
+    "20": {
+        "id": "13420",
+        "datetime": "16:0011 Oct 23",
+        "score1": "1",
+        "opponent": " SNC Lambs",
+        "score2": "13"
+    },
+    "21": {
+        "id": "14362",
+        "datetime": "16:0011 Oct 23",
+        "score1": "8",
+        "opponent": "TRC - Derby Diamonds",
+        "score2": "13"
+    },
+    "22": {
+        "id": "14363",
+        "datetime": "16:0011 Oct 23",
+        "score1": "1",
+        "opponent": "RTC - Derby Dragons",
+        "score2": "13"
+    },
+    "23": {
+        "id": "14364",
+        "datetime": "16:0011 Oct 23",
+        "score1": "0",
+        "opponent": "NCL Vikings",
+        "score2": "13"
+    },
+    "24": {
+        "id": "14365",
+        "datetime": "16:0011 Oct 23 ",
+        "score1": "4",
+        "opponent": "Team Panthera Leo",
+        "score2": "13"
+    },
+    "25": {
+        "id": "14366",
+        "datetime": "16:0011 Oct 23",
+        "score1": "1",
+        "opponent": "Bede Bears",
+        "score2": "13"
+    },
+    "26": {
+        "id": "14367",
+        "datetime": "16:0011 Oct 23",
+        "score1": "1",
+        "opponent": "NOTTSHS_VAL",
+        "score2": "13"
+    },
+    "27": {
+        "id": "14368",
+        "datetime": "16:0011 Oct 23",
+        "score1": "13",
+        "opponent": "St. David's Recon",
+        "score2": "0"
+    },
+    "28": {
+        "id": "14369",
+        "datetime": "16:0011 Oct 23",
+        "score1": "12",
+        "opponent": "STC CENTURIONS VAL",
+        "score2": "14"
+    },
+    "29": {
+        "id": "14370",
+        "datetime": "16:0011 Oct 23",
+        "score1": "13",
+        "opponent": "Mets United (X)",
+        "score2": "0"
+    },
+    "30": {
+        "id": "14371",
+        "datetime": "16:0011 Oct 23",
+        "score1": "6",
+        "opponent": "CCSW Sandstorm BLU",
+        "score2": "13"
+    },
+    "31": {
+        "id": "14372",
+        "datetime": "16:0011 Oct 23 ",
+        "score1": "13",
+        "opponent": "WCS TBC (X)",
+        "score2": "4"
+    },
+    "32": {
+        "id": "14373",
+        "datetime": "16:0011 Oct 2",
+        "score1": "0",
+        "opponent": "BYE",
+        "score2": "13"
+    },
+    "33": {
+        "id": "14374",
+        "datetime": "16:0011 Oct 23",
+        "score1": "13",
+        "opponent": "AGSB A",
+        "score2": "0"
+    },
+    "34": {
+        "id": "14375",
+        "datetime": "16:0011 Oct 23",
+        "score1": "13",
+        "opponent": "Kidderminster",
+        "score2": "6"
+    },
+    "35": {
+        "id": "14376",
+        "datetime": "16:0011 Oct 23",
+        "score1": "0",
+        "opponent": "VALB Belfast Met",
+        "score2": "13"
+    },
+    "36": {
+        "id": "14377",
+        "datetime": "16:0011 Oct 23 ",
+        "score1": "2",
+        "opponent": "Hopwood Hawks",
+        "score2": "13"
+    },
+    "37": {
+        "id": "14378",
+        "datetime": "16:0011 Oct 23",
+        "score1": "13",
+        "opponent": "Q-Esports",
+        "score2": "7"
+    },
+    "38": {
+        "id": "14379",
+        "datetime": "16:0011 Oct 23",
+        "score1": "9",
+        "opponent": "Franklin Raiders",
+        "score2": "13"
+    },
+    "39": {
+        "id": "14380",
+        "datetime": "16:0011 Oct 23",
+        "score1": "13",
+        "opponent": "UCB Bullsharks",
+        "score2": "0"
+    }
+}
