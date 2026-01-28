@@ -46,7 +46,7 @@
   text-align: center;
 }
 
-.about-t {
+.about-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,7 +55,7 @@
   margin: 0 auto;
 }
 
-.about-text p {
+.about-contentext p {
   font-size: 1.05rem;
   line-height: var(--line-height);
   margin-bottom: var(--spacing-lg);
@@ -78,7 +78,7 @@
     max-width: 100%;
     margin-bottom: 20px;
   }
-  .about-t {
+  .about-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +87,7 @@
     margin: 0 auto;
   }
 
-  .about-text {
+  .about-contentext {
     text-align: center;
   }
 
@@ -97,3 +97,4 @@
     border-radius: 8px;
   }
 }
+
