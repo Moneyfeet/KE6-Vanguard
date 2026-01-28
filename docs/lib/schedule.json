@@ -44,9 +44,9 @@
     "7": {
         "id": "13406",
         "datetime": "16:0011 Oct 23",
-        "team1": "13",
+        "score1": "13",
         "opponent": "ACE Saints Valorant",
-        "score1": "2"
+        "score2": "2"
     },
     "8": {
         "id": "13407",
@@ -163,113 +163,113 @@
     "24": {
         "id": "14365",
         "datetime": "16:0011 Oct 23 ",
-        "score1": "4",
+        "score1": "#",
         "opponent": "Team Panthera Leo",
-        "score2": "13"
+        "score2": "#"
     },
     "25": {
         "id": "14366",
         "datetime": "16:0011 Oct 23",
-        "score1": "1",
+        "score1": "#",
         "opponent": "Bede Bears",
-        "score2": "13"
+        "score2": "#"
     },
     "26": {
         "id": "14367",
         "datetime": "16:0011 Oct 23",
-        "score1": "1",
+        "score1": "#",
         "opponent": "NOTTSHS_VAL",
-        "score2": "13"
+        "score2": "#"
     },
     "27": {
         "id": "14368",
         "datetime": "16:0011 Oct 23",
-        "score1": "13",
+        "score1": "#",
         "opponent": "St. David's Recon",
-        "score2": "0"
+        "score2": "#"
     },
     "28": {
         "id": "14369",
         "datetime": "16:0011 Oct 23",
-        "score1": "12",
+        "score1": "#",
         "opponent": "STC CENTURIONS VAL",
-        "score2": "14"
+        "score2": "#"
     },
     "29": {
         "id": "14370",
         "datetime": "16:0011 Oct 23",
-        "score1": "13",
+        "score1": "#",
         "opponent": "Mets United (X)",
-        "score2": "0"
+        "score2": "#"
     },
     "30": {
         "id": "14371",
         "datetime": "16:0011 Oct 23",
-        "score1": "6",
+        "score1": "#",
         "opponent": "CCSW Sandstorm BLU",
-        "score2": "13"
+        "score2": "#"
     },
     "31": {
         "id": "14372",
         "datetime": "16:0011 Oct 23 ",
-        "score1": "13",
+        "score1": "#",
         "opponent": "WCS TBC (X)",
-        "score2": "4"
+        "score2": "#"
     },
     "32": {
         "id": "14373",
         "datetime": "16:0011 Oct 2",
-        "score1": "0",
+        "score1": "#",
         "opponent": "BYE",
-        "score2": "13"
+        "score2": "#"
     },
     "33": {
         "id": "14374",
         "datetime": "16:0011 Oct 23",
-        "score1": "13",
+        "score1": "#",
         "opponent": "AGSB A",
-        "score2": "0"
+        "score2": "#"
     },
     "34": {
         "id": "14375",
         "datetime": "16:0011 Oct 23",
-        "score1": "13",
+        "score1": "#",
         "opponent": "Kidderminster",
-        "score2": "6"
+        "score2": "#"
     },
     "35": {
         "id": "14376",
         "datetime": "16:0011 Oct 23",
-        "score1": "0",
+        "score1": "#",
         "opponent": "VALB Belfast Met",
-        "score2": "13"
+        "score2": "#"
     },
     "36": {
         "id": "14377",
         "datetime": "16:0011 Oct 23 ",
-        "score1": "2",
+        "score1": "#",
         "opponent": "Hopwood Hawks",
-        "score2": "13"
+        "score2": "#"
     },
     "37": {
         "id": "14378",
         "datetime": "16:0011 Oct 23",
-        "score1": "13",
+        "score1": "#",
         "opponent": "Q-Esports",
-        "score2": "7"
+        "score2": "#"
     },
     "38": {
         "id": "14379",
         "datetime": "16:0011 Oct 23",
-        "score1": "9",
+        "score1": "#",
         "opponent": "Franklin Raiders",
-        "score2": "13"
+        "score2": "#"
     },
     "39": {
         "id": "14380",
         "datetime": "16:0011 Oct 23",
-        "score1": "13",
+        "score1": "#",
         "opponent": "UCB Bullsharks",
-        "score2": "0"
+        "score2": "#"
     }
 }
