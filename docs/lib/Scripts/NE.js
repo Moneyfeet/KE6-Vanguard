@@ -1,7 +1,7 @@
 var dosbox = new Dosbox({
     id: 'dosbox',
     onload: function (dosbox) {
-        dosbox.run('lib/Doom/jsdoom/roms/ultimate-doom.zip',"./UltDoom/DOOM.EXE");
+        dosbox.run('Doom/jsdoom/roms/ultimate-doom.zip',"./UltDoom/DOOM.EXE");
     },
     onrun: function (dosbox, app) {
         console.log("App '" + app + " is running");
@@ -9,33 +9,36 @@ var dosbox = new Dosbox({
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const container = document.getElementById('newsContainer');
+  const newsPanel = document.getElementById('news-panel');
+  const eventPanel = document.getElementById('event-panel');
   const gameSection = document.getElementById('game-section');
   const gameHeading = gameSection.querySelector('h1');
   const gameParagraph = gameSection.querySelector('p');
 
-  // Loading state
-  container.innerHTML = `<p style="text-align:center; color:#66fcf1;">Loading news...</p>`;
-
-  fetch('news-dat.json')
+  fetch('../lib/news-data.json')
     .then(response => {
       if (!response.ok) throw new Error('Network response was not ok');
       return response.json();
     })
     .then(data => {
       const articles = data.articles;
-      container.innerHTML = ''; // clear loader
-
+      
       if (!articles || articles.length === 0) {
         // No news available
         gameHeading.textContent = 'There is currently no event or news';
         gameParagraph.textContent = 'While you wait...';
         gameSection.style.display = 'block';
+        newsPanel.style.display = 'none';
+        eventPanel.style.display = 'none';
         return;
       }
 
+      // Separate articles by type
+      const newsArticles = articles.filter(a => a.type === 'news');
+      const eventArticles = articles.filter(a => a.type === 'events');
+
       // Populate news cards
-      articles.forEach(article => {
+      newsArticles.forEach(article => {
         const card = document.createElement('div');
         card.className = 'news-card';
         card.innerHTML = `
@@ -46,7 +49,22 @@ document.addEventListener('DOMContentLoaded', () => {
             <a href="${article.url}" target="_blank">Read more</a>
           </div>
         `;
-        container.appendChild(card);
+        newsPanel.appendChild(card);
+      });
+
+      // Populate event cards
+      eventArticles.forEach(article => {
+        const card = document.createElement('div');
+        card.className = 'news-card';
+        card.innerHTML = `
+          <img src="${article.image}" alt="News Image">
+          <div class="news-card-content">
+            <h3>${article.title}</h3>
+            <p>${article.description || ''}</p>
+            <a href="${article.url}" target="_blank">Read more</a>
+          </div>
+        `;
+        eventPanel.appendChild(card);
       });
     })
     .catch(error => {
@@ -55,9 +73,11 @@ document.addEventListener('DOMContentLoaded', () => {
       gameHeading.textContent = 'There is currently no event or news';
       gameParagraph.textContent = 'While you wait...';
       gameSection.style.display = 'block';
+      newsPanel.style.display = 'none';
+      eventPanel.style.display = 'none';
     });
 });
-
+// toggle game display
 const btn = document.getElementById('gameBtn')
 let show = false
 btn.addEventListener('click', function() {
@@ -70,6 +90,19 @@ btn.addEventListener('click', function() {
         document.getElementById('fullscreen').style.display = 'none';
         show = false
     }
-
 });
 
+// Toggle accordion panels
+function togglePanel(panelId) {
+  const panel = document.getElementById(panelId);
+  const button = event.target.closest('.accordion');
+  const arrow = button.querySelector('.arrow');
+  
+  if (panel.style.display === 'grid') {
+    panel.style.display = 'none';
+    arrow.style.transform = 'rotate(0deg)';
+  } else {
+    panel.style.display = 'grid';
+    arrow.style.transform = 'rotate(180deg)';
+  }
+}
