@@ -28,8 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gameHeading.textContent = 'There is currently no event or news';
         gameParagraph.textContent = 'While you wait...';
         gameSection.style.display = 'block';
-        newsPanel.style.display = 'none';
-        eventPanel.style.display = 'none';
+        document.getElementById('news-section').style.display = 'none';
         return;
       }
 
@@ -73,8 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
       gameHeading.textContent = 'There is currently no event or news';
       gameParagraph.textContent = 'While you wait...';
       gameSection.style.display = 'block';
-      newsPanel.style.display = 'none';
-      eventPanel.style.display = 'none';
+      document.getElementById('news-section').style.display = 'none';
     });
 });
 // toggle game display
