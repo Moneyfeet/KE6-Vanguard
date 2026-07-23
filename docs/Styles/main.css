@@ -9,7 +9,7 @@
   --color-dark: #1f2833;
   --color-darker: #0b0f14;
   
-  /* Typography */
+  /* font size */
   --font-family: 'Orbitron', sans-serif;
   --font-size-base: 16px;
   --font-size-large: 24px;
@@ -17,7 +17,7 @@
   --font-size-xxl: 48px;
   --line-height: 1.5;
   
-  /* Spacing */
+  /* spacing */
   --spacing-xs: 4px;
   --spacing-sm: 8px;
   --spacing-md: 16px;
@@ -25,19 +25,19 @@
   --spacing-xl: 32px;
   --spacing-xxl: 48px;
   
-  /* Borders */
+  /* border size */
   --border-radius-sm: 6px;
   --border-radius-md: 12px;
   --border-radius-lg: 15px;
   --border-radius-xl: 25px;
   
-  /* Shadows */
+  /* shadow size */
   --shadow-sm: 0 2px 4px rgba(0,0,0,0.2);
   --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
   --shadow-lg: 0 8px 24px rgba(0,0,0,0.6);
   --shadow-accent: 0 0 20px rgba(102,252,241,0.15);
   
-  /* Transitions */
+  /* transition speed */
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.4s ease;
@@ -81,7 +81,8 @@ body {
 }
 
 #para1 {
-  font-size: 4lvw;
+  font-size: 2rem;
+
   text-shadow: 0 0 10px #0ff;
 }
 .logo {
