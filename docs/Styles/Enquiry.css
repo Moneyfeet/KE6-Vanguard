@@ -10,3 +10,15 @@
     background: rgba(31, 40, 51, 0.95);
     border-radius: 15px;
 }
+
+.error-message {
+    position: fixed;
+    top: var(--spacing-lg);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff4d4d;
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-radius: var(--border-radius-sm);
+    z-index: 10000;
+    animation: fadeOut 3s forwards;}
