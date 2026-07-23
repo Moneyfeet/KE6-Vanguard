@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gameHeading.textContent = 'There is currently no event or news';
         gameParagraph.textContent = 'While you wait...';
         gameSection.style.display = 'block';
-        document.getElementById('news-section').style.display = 'none';
+        document.querySelector('.news-section').style.display = 'none';
         return;
       }
 
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
       gameHeading.textContent = 'There is currently no event or news';
       gameParagraph.textContent = 'While you wait...';
       gameSection.style.display = 'block';
-      document.getElementById('news-section').style.display = 'none';
+      document.querySelector('.news-section').style.display = 'none';
     });
 });
 // toggle game display
@@ -104,4 +104,3 @@ function togglePanel(panelId) {
     arrow.style.transform = 'rotate(180deg)';
   }
 }
-
