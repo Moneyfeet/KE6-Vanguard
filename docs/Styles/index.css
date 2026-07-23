@@ -68,8 +68,8 @@
   border-radius: var(--border-radius-md);
   box-shadow: var(--shadow-lg), var(--shadow-accent);
 }
-/***** Responsive Design *****/
-/***** If screen is small, div formation will change to compensate *****/
+/***** responsive Design *****/
+/***** ff screen is small, div formation will change to compensate *****/
 @media screen and (max-width: 850px) {
   .hero {
     padding: 40px 5%;
@@ -97,6 +97,5 @@
     border-radius: 8px;
   }
 }
-
 
 
